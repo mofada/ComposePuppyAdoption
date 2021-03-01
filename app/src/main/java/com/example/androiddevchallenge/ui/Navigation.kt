@@ -21,7 +21,6 @@ import androidx.annotation.MainThread
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import androidx.core.os.bundleOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import com.example.androiddevchallenge.data.Puppy
@@ -64,7 +63,7 @@ private const val SIS_POST = "post"
  * levels are not allowed. To use a similar pattern with a longer back stack, use a [StateList] to
  * hold the back stack state.
  */
-class NavigationViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
+class NavigationViewModel() : ViewModel() {
     /**
      * Hold the current screen in an observable, restored from savedStateHandle after process
      * death.
