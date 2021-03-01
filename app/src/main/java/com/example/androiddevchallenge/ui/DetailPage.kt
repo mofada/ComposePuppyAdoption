@@ -174,7 +174,7 @@ fun PreviewSecondaryItem() {
         0f,
         "Female",
         "puppy",
-        R.drawable.d66928,
+        R.drawable.number_66928,
         "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
                 "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
         "Jiujiang/Xunyang District",
@@ -192,7 +192,7 @@ fun PreviewDetail() {
         0f,
         "Female",
         "puppy",
-        R.drawable.d66928,
+        R.drawable.number_66928,
         "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
                 "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
         "Jiujiang/Xunyang District",
