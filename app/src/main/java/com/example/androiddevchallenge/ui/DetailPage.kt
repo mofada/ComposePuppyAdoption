@@ -56,15 +56,15 @@ fun DetailPage(puppy: Puppy, onBack: () -> Unit) {
             FloatingActionButton(onClick = {
                 coroutineScope.launch {
                     scaffoldState.snackbarHostState.showSnackbar(
-                        "正在拨打电话 ${puppy.phoneNumber}",
-                        actionLabel = "取消",
+                        "Calling ${puppy.phoneNumber}",
+                        actionLabel = "Cancel",
                         duration = SnackbarDuration.Indefinite
                     )
                 }
             }, backgroundColor = MaterialTheme.colors.background) {
                 Icon(
                     painterResource(id = R.drawable.ic_call),
-                    contentDescription = "拨打电话",
+                    contentDescription = "dial number",
                     tint = MaterialTheme.colors.onPrimary,
                 )
             }
@@ -96,7 +96,7 @@ fun DetailPage(puppy: Puppy, onBack: () -> Unit) {
 
             item {
                 Text(
-                    text = "宠物介绍",
+                    text = "Puppy introduction",
                     fontSize = 18.sp,
                     color = MaterialTheme.colors.onPrimary,
                     modifier = Modifier
@@ -128,7 +128,7 @@ private fun PrimaryInfo(puppy: Puppy) {
             .padding(horizontal = 30.dp, vertical = 16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        PrimaryItem(title = "性别", content = puppy.sex, modifier = Modifier.weight(1f))
+        PrimaryItem(title = "Sex", content = puppy.sex, modifier = Modifier.weight(1f))
         Box(
             Modifier
                 .width(1.dp)
@@ -136,8 +136,8 @@ private fun PrimaryInfo(puppy: Puppy) {
                 .background(MaterialTheme.colors.onSurface.copy(alpha = 0.12f))
         )
         PrimaryItem(
-            title = "是否免费",
-            content = if (puppy.isFree) "免费" else "收费",
+            title = "Is Free",
+            content = if (puppy.isFree) "Free" else "Toll",
             modifier = Modifier.weight(1f)
         )
         Box(
@@ -147,8 +147,8 @@ private fun PrimaryInfo(puppy: Puppy) {
                 .background(MaterialTheme.colors.onSurface.copy(alpha = 0.12f))
         )
         PrimaryItem(
-            title = "金额",
-            content = "￥${puppy.money}",
+            title = "Money",
+            content = "$${puppy.money}",
             modifier = Modifier.weight(1f)
         )
     }
@@ -170,13 +170,14 @@ fun PrimaryItem(title: String, content: String, modifier: Modifier = Modifier) {
 @Composable
 fun PreviewSecondaryItem() {
     val puppy = Puppy(
-        "麻花",
+        "Get rich",
         0f,
         "Female",
-        "小狗",
-        R.drawable.d66927,
-        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
-        "九江/浔阳区",
+        "puppy",
+        R.drawable.d66928,
+        "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
+                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+        "Jiujiang/Xunyang District",
         "66928",
         true, 0f
     )
@@ -187,13 +188,14 @@ fun PreviewSecondaryItem() {
 @Composable
 fun PreviewDetail() {
     val puppy = Puppy(
-        "麻花",
+        "Get rich",
         0f,
         "Female",
-        "小狗",
-        R.drawable.d66927,
-        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
-        "九江/浔阳区",
+        "puppy",
+        R.drawable.d66928,
+        "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
+                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+        "Jiujiang/Xunyang District",
         "66928",
         true, 0f
     )

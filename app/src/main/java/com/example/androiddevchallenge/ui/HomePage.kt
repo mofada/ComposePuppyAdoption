@@ -32,7 +32,12 @@ fun HomePage(navigateTo: (Screen) -> Unit) {
     MyTheme {
         Scaffold(
             topBar = {
-                TopAppBar(title = { Text(text = "宠物领养", color = MaterialTheme.colors.onPrimary) })
+                TopAppBar(title = {
+                    Text(
+                        text = "Puppy adoption",
+                        color = MaterialTheme.colors.onPrimary
+                    )
+                })
             }
         ) {
             LazyColumn(Modifier.fillMaxSize()) {
@@ -71,12 +76,12 @@ fun PuppyList(puppy: Puppy, onItemClick: (puppy: Puppy) -> Unit) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = if (puppy.isFree) "免费" else "收费",
+                text = if (puppy.isFree) "Free" else "Toll",
                 fontSize = 16.sp,
                 color = MaterialTheme.colors.onSecondary
             )
             Text(
-                text = "￥${puppy.money}",
+                text = "$${puppy.money}",
                 fontSize = 16.sp,
                 color = MaterialTheme.colors.onSecondary
             )
@@ -88,13 +93,14 @@ fun PuppyList(puppy: Puppy, onItemClick: (puppy: Puppy) -> Unit) {
 @Composable
 fun PreviewPuppyList() {
     val puppy = Puppy(
-        "麻花",
+        "Get rich",
         0f,
         "Female",
-        "小狗",
-        R.drawable.d66927,
-        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
-        "九江/浔阳区",
+        "puppy",
+        R.drawable.d66928,
+        "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
+                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+        "Jiujiang/Xunyang District",
         "66928",
         true, 0f
     )
@@ -105,13 +111,14 @@ fun PreviewPuppyList() {
 @Composable
 fun PreviewPuppyListDark() {
     val puppy = Puppy(
-        "麻花",
+        "Get rich",
         0f,
         "Female",
-        "小狗",
-        R.drawable.d66927,
-        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
-        "九江/浔阳区",
+        "puppy",
+        R.drawable.d66928,
+        "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
+                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+        "Jiujiang/Xunyang District",
         "66928",
         true, 0f
     )
