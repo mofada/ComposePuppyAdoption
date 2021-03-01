@@ -21,9 +21,9 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.core.tween
+import com.example.androiddevchallenge.ui.DetailPage
 import com.example.androiddevchallenge.ui.HomePage
 import com.example.androiddevchallenge.ui.NavigationViewModel
-import com.example.androiddevchallenge.ui.DetailPage
 import com.example.androiddevchallenge.ui.Screen
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
@@ -56,4 +56,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-

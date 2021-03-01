@@ -1,23 +1,38 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.ui
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.IconButton
 import androidx.compose.material.Divider
-import androidx.compose.material.Icon
-import androidx.compose.material.SnackbarDuration
-import androidx.compose.material.Text
 import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.ScaffoldState
+import androidx.compose.material.SnackbarDuration
+import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
@@ -50,18 +65,22 @@ fun DetailPage(puppy: Puppy, onBack: () -> Unit) {
                             tint = MaterialTheme.colors.onPrimary
                         )
                     }
-                })
+                }
+            )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = {
-                coroutineScope.launch {
-                    scaffoldState.snackbarHostState.showSnackbar(
-                        "Calling ${puppy.phoneNumber}",
-                        actionLabel = "Cancel",
-                        duration = SnackbarDuration.Indefinite
-                    )
-                }
-            }, backgroundColor = MaterialTheme.colors.background) {
+            FloatingActionButton(
+                onClick = {
+                    coroutineScope.launch {
+                        scaffoldState.snackbarHostState.showSnackbar(
+                            "Calling ${puppy.phoneNumber}",
+                            actionLabel = "Cancel",
+                            duration = SnackbarDuration.Indefinite
+                        )
+                    }
+                },
+                backgroundColor = MaterialTheme.colors.background
+            ) {
                 Icon(
                     painterResource(id = R.drawable.ic_call),
                     contentDescription = "dial number",
@@ -115,8 +134,6 @@ fun DetailPage(puppy: Puppy, onBack: () -> Unit) {
                 )
             }
         }
-
-
     }
 }
 
@@ -176,7 +193,7 @@ fun PreviewSecondaryItem() {
         "puppy",
         R.drawable.number_66928,
         "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
-                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+            "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
         "Jiujiang/Xunyang District",
         "66928",
         true, 0f
@@ -194,7 +211,7 @@ fun PreviewDetail() {
         "puppy",
         R.drawable.number_66928,
         "The whole family of adopters is required to love dogs. Please consider carefully whether the adopters will be able to stay the same from beginning to end, no matter what problems they encounter, including marriage, childbirth and relocation, the student party should not disturb, if you are the one, obtain the consent of the family before adoption. Never give up, seek medical treatment if you are sick, do not abuse, do not buy or sell. Get the vaccine on time. Work is stable and has a certain economic foundation.\n" +
-                "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+            "Rescue near a trash can in the vegetable market. She was very timid and scared. She hid under the trash can shelf. The rescuer gave her food and drink every day. It slowly came out. It was also difficult to approach. Finally one day she became rich and began to trust her. He was successfully rescued. The rescuer gave Fa Cai a deworming vaccination and birth control operation. The dog is of iron-clad golden color, has dark and shiny hair, and has a particularly docile personality. A smart family member does not like to bark. Looking for someone to give him a home.\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
         "Jiujiang/Xunyang District",
         "66928",
         true, 0f

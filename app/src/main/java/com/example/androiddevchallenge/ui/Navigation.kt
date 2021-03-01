@@ -21,12 +21,11 @@ import androidx.annotation.MainThread
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import com.example.androiddevchallenge.data.Puppy
 import com.example.androiddevchallenge.ui.Screen.Home
-import com.example.androiddevchallenge.ui.ScreenName.HOME
 import com.example.androiddevchallenge.ui.ScreenName.DETAIL
+import com.example.androiddevchallenge.ui.ScreenName.HOME
 
 /**
  * Screen names (used for serialization)
@@ -50,7 +49,6 @@ sealed class Screen(val id: ScreenName) {
 private const val SIS_SCREEN = "sis_screen"
 private const val SIS_NAME = "screen_name"
 private const val SIS_POST = "post"
-
 
 /**
  * This is expected to be replaced by the navigation component, but for now handle navigation
