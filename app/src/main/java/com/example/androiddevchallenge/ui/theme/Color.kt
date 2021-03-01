@@ -26,3 +26,5 @@ val text33 = Color(0xFF333333)
 val text37 = Color(0xFF999999)
 val white = Color(0xFFFFFFFF)
 val grey = Color(0xFF8D8D8D)
+
+val divider = Color(0xFFBDBDBD)

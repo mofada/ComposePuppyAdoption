@@ -8,8 +8,8 @@ import kotlinx.parcelize.Parcelize
 data class Puppy(
     //宠物名
     val name: String,
-    //宠物年龄
-    val age: Int,
+    //宠物年龄, 月份
+    val age: Float,
     //性别
     val sex: String,
     //宠物品种
@@ -21,5 +21,9 @@ data class Puppy(
     //位置
     val location: String,
     //电话
-    val phoneNumber: String
+    val phoneNumber: String,
+    //是否免费
+    val isFree: Boolean,
+    //金额
+    val money: Float
 ) : Parcelable

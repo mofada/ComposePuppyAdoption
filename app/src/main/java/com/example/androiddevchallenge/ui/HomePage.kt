@@ -32,7 +32,7 @@ fun HomePage(navigateTo: (Screen) -> Unit) {
     MyTheme {
         Scaffold(
             topBar = {
-                TopAppBar(title = { Text(text = "Puppy", color = Color.White) })
+                TopAppBar(title = { Text(text = "宠物领养", color = MaterialTheme.colors.onPrimary) })
             }
         ) {
             LazyColumn(Modifier.fillMaxSize()) {
@@ -51,18 +51,11 @@ fun PuppyList(puppy: Puppy, onItemClick: (puppy: Puppy) -> Unit) {
     Row(
         Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(horizontal = 16.dp, vertical = 10.dp)
             .clickable { onItemClick(puppy) },
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Image(
-            painter = painterResource(id = puppy.avatar),
-            contentDescription = puppy.name,
-            modifier = Modifier
-                .size(60.dp)
-                .clip(CircleShape),
-            contentScale = ContentScale.Crop
-        )
+        CircleImage(id = puppy.avatar, contentDescription = puppy.name, size = 60.dp)
 
         Column(
             Modifier
@@ -71,14 +64,19 @@ fun PuppyList(puppy: Puppy, onItemClick: (puppy: Puppy) -> Unit) {
         ) {
             Text(text = puppy.name, fontSize = 18.sp, color = MaterialTheme.colors.onPrimary)
             Box(Modifier.height(4.dp))
-            Text(text = puppy.breed, fontSize = 16.sp, color = MaterialTheme.colors.onSecondary)
+            Text(text = puppy.sex, fontSize = 16.sp, color = MaterialTheme.colors.onSecondary)
         }
 
         Column(
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = puppy.sex, fontSize = 16.sp, color = MaterialTheme.colors.onSecondary)
             Text(
-                text = "${puppy.age} year",
+                text = if (puppy.isFree) "免费" else "收费",
+                fontSize = 16.sp,
+                color = MaterialTheme.colors.onSecondary
+            )
+            Text(
+                text = "￥${puppy.money}",
                 fontSize = 16.sp,
                 color = MaterialTheme.colors.onSecondary
             )
@@ -90,14 +88,15 @@ fun PuppyList(puppy: Puppy, onItemClick: (puppy: Puppy) -> Unit) {
 @Composable
 fun PreviewPuppyList() {
     val puppy = Puppy(
-        "Luck",
-        1,
-        "girl",
-        "金毛",
-        R.drawable.german_shepherd,
-        "可爱的金毛犬, 因为要回老家, 求好心人收留",
-        "浙江省杭州市萧山区...",
-        "13333333333"
+        "麻花",
+        0f,
+        "Female",
+        "小狗",
+        R.drawable.d66927,
+        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
+        "九江/浔阳区",
+        "66928",
+        true, 0f
     )
     PuppyList(puppy = puppy, onItemClick = {})
 }
@@ -106,14 +105,15 @@ fun PreviewPuppyList() {
 @Composable
 fun PreviewPuppyListDark() {
     val puppy = Puppy(
-        "Luck",
-        1,
-        "girl",
-        "金毛",
-        R.drawable.german_shepherd,
-        "可爱的金毛犬, 因为要回老家, 求好心人收留",
-        "浙江省杭州市萧山区...",
-        "13333333333"
+        "麻花",
+        0f,
+        "Female",
+        "小狗",
+        R.drawable.d66927,
+        "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
+        "九江/浔阳区",
+        "66928",
+        true, 0f
     )
     MyTheme(darkTheme = true) {
         PuppyList(puppy = puppy, onItemClick = {})

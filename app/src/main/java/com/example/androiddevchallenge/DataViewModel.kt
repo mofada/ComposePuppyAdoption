@@ -9,25 +9,141 @@ class DataViewModel : ViewModel() {
     val puppies by mutableStateOf(
         listOf(
             Puppy(
-                "German shepherd",
-                1,
-                "boy",
-                "German shepherd",
-                R.drawable.german_shepherd,
-                "The German Shepherd is a breed of dog. It was officially named the German Shepherd in 1977, so the names vary from place to place. In the Chinese context, it is often called German Wolfhound or German Wolfhound. The German Shepherd ranks third in the IQ ranking of all dogs.",
-                "German",
-                "0049  xxx xxxxxxxx"
+                "发财",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66928,
+                "要求领养人全家爱狗，请领养人慎重考虑，无论遇到什么问题包括结婚生孩子搬家等理由，能不能做到善始善终不离不弃，学生党勿扰非诚勿扰领养前取得家人的同意。不离不弃，有病就医，不虐待，不买卖。按时打疫苗。工作稳定，有一定经济基础。\n" +
+                        "\n" +
+                        "救助于菜市场一个垃圾桶附近，特别胆小害怕，躲在垃圾桶架子下面，救助人每天给它送吃的喝的，才慢慢出来，也很难接近，终于有一天发财它开始信任救助人，而被成功救助，救助人给发财做了驱虫疫苗节育手术，狗狗属于铁包金毛色，身上毛发黝黑锃亮，性格特别温顺聪明亲人，不爱叫， 寻找有缘人给它一个家\uD83D\uDE4F \uD83D\uDE4F \uD83D\uDE4F",
+                "九江/浔阳区",
+                "66928",
+                true, 0f
             ),
             Puppy(
-                "Bulldog",
-                1,
-                "boy",
-                "Bulldog",
-                R.drawable.bulldog,
-                "The bulldog is a mammalian animal. It is a medium-sized dog breed, also known as tiger dog and bulldog. The term bulldog is usually used to refer to the English bulldog. The other bulldog breeds include American bulldogs, ancient English bulldogs, LeWitt Bulldog, Re-enacted English Bulldog, French Bulldog, etc.",
-                "United Kingdom",
-                "020 xxxx xxxx"
-            )
+                "麻花",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66927,
+                "偶遇小麻花在外面流浪，觅食垃圾裹腹，随身带的狗粮喂食救助，特别聪明粘人，希望给它找到一个不离不弃善始善终的好主人，给它一个家，不再居无定所流浪甚至被人虐杀",
+                "九江/浔阳区",
+                "66927",
+                true, 0f
+            ),
+            Puppy(
+                "麻花",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66919,
+                "在康王中路捡到一只走丢狗女，耳朵干净，没有皮肤病，健康，已驱虫打疫苗，性格爱粘人懂事，有兴趣的朋友希望做好无论什么情况下都对她不离不弃并一直悉心照顾的心理准备，家人同意并不是一时冲动才领养，不虐待，不买卖。",
+                "广州/荔湾区",
+                "66919",
+                true, 0f
+            ),
+            Puppy(
+                "Lucky",
+                0f,
+                "Male",
+                "小狗",
+                R.drawable.d66915,
+                "上海地区领养，拒绝合租。",
+                "上海/黄浦区",
+                "66915",
+                true, 0f
+            ),
+            Puppy(
+                "东宝",
+                0f,
+                "Male",
+                "小狗",
+                R.drawable.d66912,
+                "上海地区领养，接受合租。",
+                "上海/黄浦区",
+                "66912",
+                true, 0f
+            ),
+            Puppy(
+                "卷毛狗弟弟",
+                0.5f,
+                "Female",
+                "卷毛狗",
+                R.drawable.d66910,
+                "认真找家，1.12日出生的小狗子，三只妹妹已被领养，剩下最帅的开脸卷毛弟弟，性格温顺害羞超级友好，见到陌生猫猫狗狗一边颤颤巍巍一边狂甩尾巴去舔人家～领养代替买卖盆友们！只要真心养，已驱虫洗澡上门认真找家，1.12日出生的小狗子，三只妹妹已被领养，剩下最帅的开脸卷毛弟弟，性格温顺害羞超级友好，见到陌生猫猫狗狗一边颤颤巍巍一边狂甩尾巴去舔人家～领养代替买卖盆友们！只要真心养，包送疫苗驱虫做了检查非常健康\uD83D\uDC36\uD83D\uDC97 \uD83D\uDC36\uD83D\uDC97\n" +
+                        "\n" +
+                        "放一张小时候萌照",
+                "北京/北京",
+                "66910",
+                true, 0f
+            ),
+            Puppy(
+                "柯基",
+                0.5f,
+                "Male",
+                "柯基",
+                R.drawable.d66911,
+                "流浪柯基，带回来检查过没什么问题，就是胆子比较小，没精力养找个好人家",
+                "杭州/杭州",
+                "66911",
+                true, 0f
+            ),
+            Puppy(
+                "芹芹",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66908,
+                "遗弃救助",
+                "上海/浦东新区",
+                "66908",
+                true, 0f
+            ),
+            Puppy(
+                "麦吉",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66903,
+                "繁殖犬救助的小可怜，上海地区免费领养",
+                "上海/浦东新区",
+                "66903",
+                true, 0f
+            ),
+            Puppy(
+                "牛牛",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66904,
+                "这个狗狗可能是发情期走失的，然后还吃了几天牢饭，正好遇到一个朋友的狗狗走失，她去派出所找狗的时候看到了它，就把它救出来了，现在已经做好了绝育，妹妹，性格非常好，在宝山宠物店寄养，有意向领养它的朋友可以去宠物店里看看它，谢谢",
+                "上海/浦东新区",
+                "66904",
+                true, 0f
+            ),
+            Puppy(
+                "小黄黄",
+                0.5f,
+                "Female",
+                "小狗",
+                R.drawable.d66901,
+                "小黄黄是个聪明机敏毛娃，非常粘人，乖巧可爱。今年夏天我们救助了一个怀孕狗妈妈，刚救助送到医院，就生产了六只狗娃。这个小黄黄性格随他妈妈，非常乖，很漂亮，毛发光亮，健康。小黄黄快快半岁了，它很惹人喜爱。您愿意给他一个温暖的家么？只限北京或燕郊领养。",
+                "北京/通州区",
+                "66901",
+                true, 0f
+            ),
+            Puppy(
+                "巧克力",
+                0f,
+                "Female",
+                "小狗",
+                R.drawable.d66896,
+                "工作有变动，经常出差，无法陪伴，免费领养",
+                "上海/闵行区",
+                "66896",
+                true, 0f
+            ),
         )
     )
 }
