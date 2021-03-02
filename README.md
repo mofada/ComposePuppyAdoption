@@ -1,4 +1,4 @@
-# Put title of your app here
+# Puppy Adoption
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
@@ -7,7 +7,11 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-A pet adoption procedure, I feel pretty good about myself
+A pet adoption procedure by [Jetpack Compose](https://developer.android.com/jetpack/compose), I feel pretty good about myself
+- List of dogs and pets that can be adopted
+- Click on each pet to enter the pet details page
+- There is a `call` button in the lower right corner of the pet, click to make a call to contact the pet owner (the call function is not yet implemented, this is just a `Snack`)
+- Click back on the title bar to return to the list again
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
@@ -17,6 +21,7 @@ This is a new thing, very new and new thing. I have used flutter before. When I 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<br/>
 <img src="/results/screenshot_1_dark.png" width="260">&emsp;<img src="/results/screenshot_2_dark.png" width="260">
 
 ## License
