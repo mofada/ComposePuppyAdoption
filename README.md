@@ -7,7 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-A pet adoption procedure by [Jetpack Compose](https://developer.android.com/jetpack/compose), I feel pretty good about myself
+A pet adoption procedure by [Jetpack Compose](https://developer.android.com/jetpack/compose),  ~~I feel pretty good about myself~~ After seeing what the big guys on Twitter did, I instantly felt that I was doing an axe at the door of the class. It’s amazing.
 - List of dogs and pets that can be adopted
 - Click on each pet to enter the pet details page
 - There is a `call` button in the lower right corner of the pet, click to make a call to contact the pet owner (the call function is not yet implemented, this is just a `Snack`)
